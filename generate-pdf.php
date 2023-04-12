@@ -53,4 +53,4 @@ $dompdf->stream("invoice.pdf", ["Attachment" => 0]);
  * Save the PDF file locally
  */
 $output = $dompdf->output();
-file_put_contents("file.pdf", $output);
+file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR."uploads/exito.pdf", $output);
